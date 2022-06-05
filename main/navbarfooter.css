@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
+.mob-nav {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+}
 .nav-mainPage {
   display: none;
 }
@@ -27,11 +31,11 @@
   margin-right:10px;
   
 }
-@media (min-width:1024px){
+@media screen and (min-width:1023px){
   .nav-mainPage{
     display:none !important
   }
-}
+} 
 @media (min-width:820px) and (max-width:900px){
   .desk-dropdowns li {
     margin-right: 30px;
@@ -40,7 +44,7 @@
   
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .nav-mainPage {
     width: 100vw;
     height: 100vh;
@@ -226,10 +230,6 @@
   padding: 0;
 }
 
-.mob-nav {
-  display: none;
-  font-family: 'Montserrat', sans-serif;
-}
 
 .nav-bar-desktop {
   z-index: 1000;
