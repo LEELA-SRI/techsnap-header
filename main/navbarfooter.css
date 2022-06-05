@@ -242,7 +242,7 @@
   display: flex;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  box-shadow: 0px 1px 5px #ff00bb;
+  box-shadow: 0px 1px 5px #1a191d;
   padding-right:0.4rem
 }
 
@@ -412,7 +412,7 @@
     top: 0;
     justify-content: center;
     display: flex;
-    box-shadow: 0px 1px 5px #ff00bb;
+    box-shadow: 0px 1px 5px #1a191d;
   }
 
   .mob-nav-frame {
@@ -454,7 +454,7 @@
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1045px) {
   .catalog-dropdown-desk {
     margin-left: none;
     right: 4rem;

@@ -96,7 +96,7 @@ window.addEventListener('scroll', function (event) {
         document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
 
         document.getElementsByClassName('mob-nav')[0].style.background = "#1A191D";
-        document.getElementsByClassName('mob-nav')[0].style.boxShadow ="0px 1px 7px #ff00bb";
+        document.getElementsByClassName('mob-nav')[0].style.boxShadow ="0px 1px 7px #1a191d";
         document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
     }
 });
