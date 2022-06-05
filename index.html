@@ -1160,18 +1160,25 @@
             var DP4 = $(".4-dropdown");
             var DP5 = $(".5-dropdown");
 
+            
             $(".catalog-desk").click(function(){
                 dp1.toggle();
+                // $(DP1).siblings().removeClass('colored');
+                // $(this).toggleClass('colored')
+                // console.log('yup');
             });
             $(".community-desk").click(function(){
                 dp2.toggle();
+                
             });
             $(".resource-desk").click(function(){
                 dp3.toggle();
+                
             });
             $(".pricing-desk").click(function(){
                 console.log(dp4.is(":hidden"));
                 dp4.toggle();
+                
             });
             $(".profile-avatar").click(function(){
                 dp5.toggle();
