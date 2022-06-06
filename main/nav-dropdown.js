@@ -1,3 +1,4 @@
+'use strict'
 const nav_mainPage = document.getElementsByClassName('nav-mainPage');
 const nav_catPage = document.getElementsByClassName('nav-catalogPage');
 const nav_commPage = document.getElementsByClassName('nav-commPage');
@@ -30,6 +31,7 @@ else {
 }
 
 function hideMobNavigationMenu() {
+    document.querySelector('body').style.overflow="scroll"
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "none";
@@ -38,6 +40,7 @@ function hideMobNavigationMenu() {
 }
 
 function showMobMainNavigationMenu() {
+    document.querySelector('body').style.overflow="hidden"
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "block";
@@ -81,7 +84,7 @@ window.addEventListener('scroll', function (event) {
     var scrollbar = window.scrollY;
     if (scrollbar > 20) {
         document.getElementsByClassName('mob-nav')[0].style.background = "#FFF";
-        document.getElementsByClassName('mob-nav')[0].style.boxShadow ="0px 1px 7px #1A191D";
+       
         document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";
 
         document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(100%)";
@@ -96,7 +99,10 @@ window.addEventListener('scroll', function (event) {
         document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
 
         document.getElementsByClassName('mob-nav')[0].style.background = "#1A191D";
-        document.getElementsByClassName('mob-nav')[0].style.boxShadow ="0px 1px 7px #1a191d";
+        
         document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
     }
 });
+
+
+
