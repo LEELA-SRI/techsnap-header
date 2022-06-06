@@ -36,6 +36,11 @@
 .dropdown-main-1-card li {
   margin-right: 10px;
 }
+.profile-dropdown-desk span{
+  align-items: center;
+
+}
+
 .colored, .colored *{
   color:#fc00bd
 }
@@ -83,7 +88,7 @@
     bottom: 0;
     background-color: #f4f4f4;
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     border-top: 1px solid #ccc;
     display: flex;
     flex-direction: column;
@@ -276,7 +281,7 @@
 .desk-dropdowns {
   display: flex;
   padding-left: 1rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
   margin-left: auto;
 }
 
@@ -336,8 +341,8 @@
   position: absolute;
   background-color: #fff;
   margin-top: 15px;
-  width: fit-content;
-  margin-left: -118px;
+  width: 208px;
+  margin-left: -129px;
   /* right:1.4rem; */
   color: black;
   border-radius: 3px;
@@ -397,7 +402,7 @@
   list-style: none;
   margin: 0px;
   padding: 15px;
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .prof-dropdown li {
@@ -412,14 +417,21 @@
   color: #fc00bd;
 }
 
+@media (min-width:1200px) and (max-width:1300px){
+  .profile-dropdown-desk{
+    margin-left: 0px;
+    right:1.4rem
+  }
+}
 @media (min-width:1300px){
   .profile-dropdown-desk{
     margin-left: -81px;
+    
   }
 }
 @media screen and (max-width: 1023px) {
   .nav-bar-desktop {
-    display: none;
+    display: none !important;
   }
 
   /* Start of Mobile Nav Bar */
@@ -544,6 +556,7 @@
   display: grid;
   place-items: center;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 .Footer_page {
   overflow: hidden;
