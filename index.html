@@ -1163,6 +1163,17 @@
             
             $(".catalog-desk").click(function(){
                 dp1.toggle();
+                $(document).ready(function () {
+          $(document).mousemove(function () {
+            if ($(".catalog-dropdown-desk:hover").length != 0) {
+              $('html, body').css('overflow-y', 'hidden');
+
+            } else {
+              $('html, body').css('overflow-y', 'auto');
+
+            }
+          });
+        });
                 
             });
             $(".community-desk").click(function(){
