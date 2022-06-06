@@ -330,11 +330,12 @@
 }
 
 .profile-dropdown-desk {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   margin-top: 15px;
   width: 240px;
-  margin-left: -145px;
+  margin-left: -199px;
+  right:0;
   color: black;
   border-radius: 3px;
   padding: 0px;
